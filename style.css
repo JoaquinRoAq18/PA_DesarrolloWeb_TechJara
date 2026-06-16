@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+/*
+// <weight>: Use a value from 200 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+.bricolage-grotesque-<uniquifier> {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
+
+/*variables y selectores universales*/
+:root{
+    --colorIdentificador: rgb(0, 101, 108);
+    --colorSecundario: rgb(52, 52, 58);
+    --colorInteraccion: rgb(188, 204, 204);
+    --colorActivo: aqua;
+    --fuenteLetra1: "Bricolage Grotesque", sans-serif;
+}
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    position: sticky;
+    top: 0;
+    font-family: var(--fuenteLetra1);
+}
+/*.checkMenus{
+    display: none;
+}*/ 
+input[type="checkbox"]{
+    display: none;
+}
+section{
+    min-height: 100vh;
+    scroll-margin-top: 160px;
+}
+div{
+    scroll-margin-top: 150px;
+}
+a{
+    text-decoration: none;
+    color: azure;
+    
+}
+li{
+    list-style-type: none;
+}
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+/*configuraciones de este menu y aspectos internos*/
+.menuDePagina1 > ul{
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    gap: 30px;
+    list-style-type: none;
+}
+.menuDePagina1{
+    background-color: var(--colorSecundario);
+    padding: 1%;
+}
+.menuDePagina1 a{
+    padding: 20px 20px;
+}
+.menuDePagina1 > ul > li > a:hover{
+    background-color: var(--colorInteraccion);
+    color: black;
+    transition: 0.3s; 
+}
+.menuDePagina1 > ul > li > a:active{
+   background-color:var(--colorActivo);
+}
+.menuDePagina1 > ul li:nth-child(4){ /*solo el 4 hijo es seleccionado de esa ul*/
+    position: relative;
+} 
+.opcionPromocion{
+    display: none;
+    position: absolute;
+    top: 160%;
+    background-color: var(--colorSecundario) ;
+   list-style-type: none;
+   width: 100%;
+   z-index: 1000;
+}
+.menuDePagina1 > ul li:nth-child(4):hover .opcionPromocion{ /*cuando este en hover busca ca opcion promocion y ejecutas la siguientes propiedades*/
+    display: block;
+
+}
+.opcionPromocion li, .opcionPromocion a{
+    height: 30px ;
+    padding: 7.5px 10px;
+    
+}
+.opcionPromocion a{
+    display: block;
+    padding: 0;
+}
+.opcionPromocion li:hover{
+    background-color: var(--colorInteraccion);
+    color: black;
+    transition: 0.3s; 
+
+}
+
+
+/*MODIFICACIONES EN EL MENU 2*/
+.menu2{
+    background-color: var(--colorIdentificador);
+    padding: 1.5%;
+}
+.menu2 li{
+    padding-top: 11px;
+
+}
+.menu2 > ul{
+   display: flex;
+   justify-content: space-around;
+   padding: 0 5% 0 5%;
+   list-style: none;
+}
+.menu2 > ul li:nth-child(1){
+   position: relative;
+}
+.SubmenuCategorias{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    background-color:var(--colorActivo);
+    border: 1px solid black;
+    min-width: 300px;
+    min-height: 250px; /*aqui crece cuando el tamaño de los elemento internos tambien*/
+}
+.SubmenuCategorias a{
+    display: block;
+    padding: 5px 10px;
+    color: black;
+}
+#menu-burger1:checked ~ .SubmenuCategorias { /*cuando el menu checkbox este checked busca a su hermano submenu y ejecuta las siguiente propiedades*/
+   display: block;
+}
+
+.menuInicioSesion{
+   display: none;
+   position: absolute;
+   top: 80%;
+   background-color: var(--colorActivo);
+   min-height: 80px;
+   min-width: 100px;
+
+}
+.menuInicioSesion a{
+    padding: 5px 10px;
+    color: black;
+}
+.menu2 >ul li:nth-child(4){
+    position: relative;
+}
+.usuario:hover .menuInicioSesion{
+    display: block;
+}
+.menu2 > ul > li:hover{
+    text-decoration: underline;
+    transition: 0.3s; 
+}
+.barraBuscador{
+    padding-top: 0px !important;
+}
+#buscador{
+    border: 0;
+    width: 400px;
+    height: 40px;
+}
+
+
+/* 
+CONFIGURACIONES EN EL MAIN
+*/
+
+/*
+Seccion de inicio
+*/
+#Inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+/*dentro de inicio*/
+
+#listaDeMarcas ul{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    
+}
+#listaDeMarcas li{
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    margin: 20px;
+    
+}
+.inicio{
+    text-align: center;
+}
+
+
+/*
+NOTA:
+puedo usar este comando para definir mejor el scroll margin
+@media (max-width: 1024px) {
+  .header {
+    height: 80px;
+  }
+}
+
+*/
