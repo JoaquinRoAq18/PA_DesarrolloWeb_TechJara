@@ -65,6 +65,44 @@ footer{
 }
 
 
+/*index*/
+.prom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.promAct{
+     border: 1px solid black;
+    box-shadow: 0px 4px 20px var(--colorSecundario);
+     width: 20%;
+     height: 300px;
+     margin: 15px;
+     padding: 10px;
+}
+.Prod{
+    display: flex;
+    justify-content: space-between;
+}
+.Descuento{
+    margin-right: 20px;
+    background-color: var(--colorIdentificador);
+    color: white;
+    border-radius: 5px;
+
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.boton button{
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    background-color: var(--colorSecundario);
+    color: white;
+}
+
 /*Centro De  ayuda*/
 .barraDeColor{
     background-color: var(--colorIdentificador);
