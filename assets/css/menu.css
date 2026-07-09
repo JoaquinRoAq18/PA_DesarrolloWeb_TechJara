@@ -23,7 +23,7 @@
 .menuDePagina1 > ul > li > a:active{ /*el a hijo de li, hijo de ul hijo de menu de pagina, mientrea mantengas clicakdo */
    background-color:var(--colorActivo); /*cambiara de color de fonfo*/
 }
-.menuDePagina1 > ul li:nth-child(3){ /*solo el 4 hijo es seleccionado de esa ul*/
+.menuDePagina1 > ul li:nth-child(4){ /*solo el 4 hijo es seleccionado de esa ul*/
     position: relative; /*adoptra una poscion relativa, es decir que es posible modificar su moviientosin que su espacio se ocupe por otros elementos*/
 } 
 .opcionPromocion{ /*la clase opci9n promocio*/
@@ -36,7 +36,7 @@
    z-index: 1000; /*esto de aqui solo funcnona en elementos con poscion diferetnte al static, con esto se sobrepone a otod es decir esta delante de cualquier elemtno*/
    padding: 0;
 }
-.menuDePagina1 > ul li:nth-child(3):hover .opcionPromocion{ /*cuando este en hover busca ca opcion promocion y ejecutas la siguientes propiedades*/
+.menuDePagina1 > ul li:nth-child(4):hover .opcionPromocion{ /*cuando este en hover busca ca opcion promocion y ejecutas la siguientes propiedades*/
     display: block; /*se mostrara pas de none a block*/
 
 }
@@ -48,7 +48,7 @@
 .opcionPromocion a{ /*todos los a de la opcion promociion */
     display: block; /*se les da un duiplay de bloqyue por lo que ocupan toda el ancho de su padre*/
     padding: 0; /*no tienen ningun padding*/
-}
+    }
 .opcionPromocion li:hover{ /*cuando el mouse este sobre el todos los li de opcion promocion*/
     background-color: var(--colorInteraccion);
     color: black;
