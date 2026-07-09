@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+/*
+// <weight>: Use a value from 200 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+.bricolage-grotesque-<uniquifier> {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
+
+/*variables y selectores universales*/
+:root{
+    --colorIdentificador: rgb(0, 101, 108);
+    --colorSecundario: rgb(52, 52, 58);
+    --colorInteraccion: rgb(188, 204, 204);
+    --colorActivo: aqua;
+    --fuenteLetra1: "Bricolage Grotesque", sans-serif;
+}
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    position: sticky;
+    top: 0;
+    font-family: var(--fuenteLetra1);
+    z-index: 1002;
+}
+/*.checkMenus{
+    display: none;
+}*/ 
+input[type="checkbox"]{
+    display: none;
+}
+section{
+    min-height: 100vh;
+    scroll-margin-top: 160px;
+}
+div{
+    scroll-margin-top: 150px;
+}
+a{
+    text-decoration: none;
+    color: azure;
+    
+}
+li{
+    list-style-type: none;
+}
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+/*Centro De  ayuda*/
+.barraDeColor{
+    background-color: var(--colorIdentificador);
+   
+}
+.card-body p:hover{
+   text-decoration: dashed;
+}
