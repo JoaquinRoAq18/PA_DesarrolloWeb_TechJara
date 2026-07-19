@@ -15,10 +15,11 @@
 
 /*variables y selectores universales*/
 :root{
-    --colorIdentificador: rgb(0, 101, 108);
+    --colorIdentificador: #00656c;
     --colorSecundario: rgb(52, 52, 58);
     --colorInteraccion: rgb(188, 204, 204);
     --colorActivo: aqua;
+    --fuente-Color: #f5f5f5;
     --fuenteLetra1: "Bricolage Grotesque", sans-serif;
 }
 *{
@@ -45,25 +46,22 @@ input[type="checkbox"]{
 }
 section{
     min-height: 100vh;
-    scroll-margin-top: 160px;
-}
-div{
-    scroll-margin-top: 150px;
+    
 }
 a{
     text-decoration: none;
-    color: azure;
-    
+    color: azure; 
 }
 li{
     list-style-type: none;
 }
+/*00
 footer{
   background-color: black;
   color: white;
   text-align: center;
 }
-
+*/
 
 /*index*/
 .prom{
