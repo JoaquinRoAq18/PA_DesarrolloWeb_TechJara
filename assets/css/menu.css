@@ -93,14 +93,14 @@
     top: 100%; /*se hubica por debajo del padre un 100% dfe su tamaño*/
     left: 20%; /*se ubica 20% hacia a la derecha del tamaño del padre*/
     background-color:var(--colorIdentificador);
-    border: 0px;
-    min-width: 300px;
+    border: 1px solid var(--colorActivo);
     min-height: 250px; /*aqui crece cuando el tamaño de los elemento internos tambien*/
 }
 .SubmenuCategorias a{
     display: block; /*les doy un tamaño de bloque para quue en modo caja sean mucho mas facil maipular*/
     padding: 5px 10px;
     color: var(--fuente-Color);
+   
 }
 #menu-burger1:checked ~ .SubmenuCategorias { /*cuando el menu checkbox este checked busca a su hermano submenu y ejecuta las siguiente propiedades*/
   /*"Selecciona todos los elementos con la clase ssubcategoria que sean hermanos de menuburger y que aparezcan después de menuburger dentro del mismo elemento padre."*/
