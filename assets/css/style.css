@@ -59,13 +59,14 @@ a{
 li{
     list-style-type: none;
 }
-/*00
 footer{
-  background-color: black;
-  color: white;
+    min-height: 20vh;
+}
+
+.footer-content{
   text-align: center;
 }
-*/
+
 
 /*index*/
 .InfoCyber{
@@ -77,9 +78,8 @@ footer{
      padding-top: 10px;
 }
 .PromoGamer{
-   margin: 200px;
-   margin-top: 10px;
-   background-color: var(--colorActivo);
+   margin: 0px 50px 5px 50px;
+   
 }
 .PromoGamer > h2 + div{
     display: flex;
@@ -112,12 +112,19 @@ footer{
     background-color: white;
     
 }
+.PromoAparatos{
+   display: flex;
+   gap: 10px;
+  margin: 0px 50px 5px 50px;
+}
 .GarantiaServicio{
     background-color: white;
-    
+    max-width: 400px;
+     
 }
 .GarantiaServicio h3 + div{
     display: flex;
+    margin-bottom: 20px;
    
 }
 .GarantiaServicio h3{
@@ -142,7 +149,7 @@ footer{
 .promAct{
      border: 1px solid black;
     box-shadow: 0px 4px 20px var(--colorSecundario);
-     max-width: 50%;
+     max-width: 30%;
      min-height: 300px;
      margin: 15px;
      margin-top: 15px ;
@@ -150,7 +157,6 @@ footer{
      display: flex;
      flex-direction: column;
      
-     /*flex-grow: 1;*/
 }
 .promAct img + p{
   text-align: center;
@@ -160,6 +166,7 @@ footer{
     margin: 10px;
     height: 70%;
     width: 90%;
+    
 }
 .Prod{
     display: flex;
@@ -184,8 +191,65 @@ footer{
     color: white;
 }
 
+
+/*SECCION Mas MARCAS*/
+.MarcasBanner{
+    margin: 0px 50px 5px 50px;  
+}
+.MarcasBanner img{
+    width: 100%;
+    min-height: 50vh ;
+    margin: 10px 5px;
+}
+/*Seccion Scooters, smartphones*/
+.ProductosOferta{
+   margin: 0px 50px 5px 50px;   
+}
+.ProductosOferta > div{
+    display: flex;
+
+}
+.ProductosOferta > h2 span{
+    display: inline-block;
+    color: var(--colorActivo);
+    width: 20%;
+    font-size: 5px;
+    margin-left: 10px;
+    background-color: var(--colorActivo);
+}
+
 /*Centro De  ayuda*/
 .barraDeColor{
     background-color: var(--colorIdentificador);
    
+}
+/*Servicios*/
+.Info h2{
+   color: var(--colorActivo);
+} 
+.Soporte{
+    background-color: var(--colorInteraccion);
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.Soporte > div{
+    border-radius: 10px;
+}
+.Soporte > div i{
+    font-size: 100px;
+}
+.sub{
+    color: var(--colorActivo);
+}
+/*tiendas*/
+.tiendas{
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/*footer*/
+#footer-contenedor{
+    min-height: 20vh;
 }
