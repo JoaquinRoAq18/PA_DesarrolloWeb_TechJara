@@ -111,15 +111,16 @@
    display: none; /* el menu de inicio esta en diplay none*/
    position: absolute; /* posicion abosluta  hijo de vul li nth 4*/
    top: 80%; /* se posicion a un 80% por debajo del tamaño del padre*/
-   background-color: var(--colorActivo);
+   background-color: var(--colorIdentificador);
    min-height: 80px; /*tamaño minimo de 80px*/
-   min-width: 100px;
+   min-width: 130px;
    padding: 0;
+   color: var(--fuente-Color);
 
 }
 .menuInicioSesion a{ /* todos los a de inicioSesion*/
     padding: 5px 10px; 
-    color: black;
+     color: var(--fuente-Color);
 }
 .menu2 >ul li:nth-child(5){
     position: relative; /*el 4 hijo de ul hijo directo de menu2 tiene la poscion relativa par que su hjo absoluto tenga referencia */
